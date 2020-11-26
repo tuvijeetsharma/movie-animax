@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Passion+One&family=Work+Sans&display=swap");
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    color: #ffff;
+}
+header{
+    background-image: url("http://i1.faceprep.in/prograd-junior/animax-bg.png");
+    background-size: 100% 100%;
+    max-width: 100%;
+    max-height: 100%;
+
+}
+
+#logo img {
+    height: 5vh;
+}
+#header-text > p {
+width: 300px;
+}
+nav{
+    margin: 2% 7%;
+}
+#scroll {
+    width: 80px;
+    position: relative;
+    animation: mymove 3s infinite;
+    animation-play-state: running;
+  }
+  
+#header-text {
+max-width: 500px;
+min-height: 300px;
+padding: 10% 0%;
+text-align: center;
+align-items:center;
+margin: auto;
+}
+h1 {
+    font-family: "Passion One", cursive;
+    font-size: 55px;
+    font-weight: lighter;
+}
+p{
+    font-family: "Work Sans", sans-serif;
+    font-size: 22px;
+}
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.movies{
+    flex-wrap: wrap;
+    min-height: 300px;
+    margin:3% 14%;
+}
+.movie-text {
+    max-width: 400px;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.movie-image > img {
+    width: 100%;
+}
+.button {
+    background-color: #f50a5f;
+    padding: 7px;
+}
+#play{
+    display: inline;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+hr{
+    border: 8px solid #1b1717;
+}
+footer {
+    height: 90px;
+    text-align: center;
+  }
+  @keyframes mymove {
+    from {
+      top: 15px;
+    }
+    to {
+      top: 100px;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .wrap-reverse {
+      flex-wrap: wrap-reverse;
+    }
+    .container {
+      text-align: center;
+    }
+    .button {
+      margin: 0% 2%;
+    }
+  }
+  .movie-image{
+      height: 240px;
+      width: 400px;
+  }
+  .movie-text>p{
+      margin: 22px 0px;
+
+  }
